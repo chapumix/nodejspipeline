@@ -1,6 +1,5 @@
 node {
-   def gitcommit
-   tools {dockerTool  "DockerServer" }
+   def gitcommit   
    stage('Verificación SCM') {
      checkout scm
      sh "git rev-parse --short HEAD > .git/commit-id"                        
